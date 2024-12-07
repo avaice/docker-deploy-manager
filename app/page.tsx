@@ -4,7 +4,7 @@ import { checkIsDockerInstalledAction } from "./_actions/checkIsDockerInstalledA
 
 export default async function Home() {
   if ((await checkIsDockerInstalledAction()) !== true) {
-    redirect("/docker-not-installed");
+    redirect("/docker-isnt-installed");
   }
 
   return (
